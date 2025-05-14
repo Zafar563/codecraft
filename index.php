@@ -6,8 +6,18 @@
     <title> Dasturlash Kurslari</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo .webp"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
+    <?php
+if (isset($_SESSION['success_message'])) {
+    echo "<div style='text-align:center; background:#d4edda; color:#155724; padding:10px; margin:20px; border:1px solid #c3e6cb; border-radius:5px;'>
+        {$_SESSION['success_message']}
+    </div>";
+    unset($_SESSION['success_message']);
+}
+?>
+
    <div class="wrapper">
     <header>
         <div class="logo">
@@ -16,11 +26,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="index.php">Bosh sahifa</a></li>
                 <li><a href="kasblar.html">Kasblar</a></li>
                 <li><a href="kurslar.html">Kurslar</a></li>
                 <li><a href="contact.html">contacts</a></li>
-                <li><a href="kirish.html" class="btn">Kirish</a></li>
+                <li> <a href="auth.php?action=register">Ro‘yxatdan o‘tish</a></li>
+                <li><a href="index2.php">SIGNIN|SIGNUP</a></li>
             </ul>
         </nav>
     </header>
@@ -106,8 +117,51 @@
                 </div>
             </div>
         </section>
+        
      
         <script src="index.js"></script>
+    </div>
+    <div class="carusel">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="ai kurs.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sun’iy intellekt</h5>
+                      <p>AI texnologiyalariga asoslangan kurs. Ma'lumotlar tahlili va mashinani o‘rganish.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Blog-Banner-Computer-Vision.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Compyuter Vision</h5>
+                      <p>Computer Vision — bu rasm va videolar orqali kompyuterga “ko‘rishni” o‘rgatadigan sun’iy intellekt yo‘nalishi.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="frontend-kurs.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Frontend</h5>
+                      <p>Veb dasturlash asoslari</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-container">
@@ -142,10 +196,9 @@
             </div>
         </div>
     
-        <div class="footer-bottom">
-            <p>&copy; 2025 CodeCraft. Barcha huquqlar himoyalangan.</p>
-        </div>
+       
     </footer>
    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
