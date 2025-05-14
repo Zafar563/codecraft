@@ -15,20 +15,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($user && password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
-            // JavaScript alert va redirect
+          
             echo "<script>
                     alert('Kirish muvaffaqiyatli! Xush kelibsiz, " . $user['name'] . "!');
                     window.location.href = 'index.php';
                   </script>";
         } else {
-            // Xato xabari alert orqali
             echo "<script>
                     alert('Noto\\'g\\'ri email yoki parol!');
                     window.location.href = 'index2.php';
                   </script>";
         }
     } catch(PDOException $e) {
-        // Xato xabari alert orqali
+
         echo "<script>
                 alert('Xato: " . addslashes($e->getMessage()) . "');
                 window.location.href = 'index2.php';

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dasturlash Kurslari</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo .webp"> 
+    <link rel="icon" type="image/png" href="./img/logo .webp"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
@@ -21,7 +21,7 @@ if (isset($_SESSION['success_message'])) {
    <div class="wrapper">
     <header>
         <div class="logo">
-            <img src="logo .webp" alt="CodeCraft Logo">
+            <img src="./img/logo .webp" alt="CodeCraft Logo">
             CodeCraft 
         </div>
         <nav>
@@ -29,8 +29,7 @@ if (isset($_SESSION['success_message'])) {
                 <li><a href="index.php">Bosh sahifa</a></li>
                 <li><a href="kasblar.html">Kasblar</a></li>
                 <li><a href="kurslar.html">Kurslar</a></li>
-                <li><a href="contact.html">contacts</a></li>
-                <li> <a href="auth.php?action=register">Ro‘yxatdan o‘tish</a></li>
+                <li><a href="contact.html">Contacts</a></li>
                 <li><a href="index2.php">SIGNIN|SIGNUP</a></li>
             </ul>
         </nav>
@@ -50,22 +49,22 @@ if (isset($_SESSION['success_message'])) {
             <h2>O‘quvchilarimiz fikrlari</h2>
             <div class="review-cards">
                 <div class="review">
-                    <img src="1-ustoz.jpg" alt="Mavludaxon ">
+                    <img src="./img/1-ustoz.jpg" alt="Mavludaxon ">
                     <h4>Mavludaxon Numanova</h4>
                     <p>Data Science va Sun’iy intellekt kursi bitiruvchisi</p>
                 </div>
                 <div class="review">
-                    <img src="images (1).jpg" alt="Malohat ">
+                    <img src="./img/images (1).jpg" alt="Malohat ">
                     <h4>Yusufboy Rajabov</h4>
                     <p>"QA" kursi bitiruvchisi</p>
                 </div>
                 <div class="review">
-                    <img src="images.jpg" alt="Abdugaffor ">
+                    <img src="./img/images.jpg" alt="Abdugaffor ">
                     <h4>Abdugaffor Abdukarimov</h4>
                     <p>"Project Management" kursi bitiruvchisi</p>
                 </div>
                 <div class="review">
-                    <img src="images (2).jpg" alt="Jamoliddin Najmiddinov">
+                    <img src="./img/images (2).jpg" alt="Jamoliddin Najmiddinov">
                     <h4>Jamoliddin Najmiddinov</h4>
                     <p>"Project Management" kursi o‘quvchisi</p>
                 </div>
@@ -131,21 +130,21 @@ if (isset($_SESSION['success_message'])) {
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="ai kurs.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/ai kurs.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Sun’iy intellekt</h5>
                       <p>AI texnologiyalariga asoslangan kurs. Ma'lumotlar tahlili va mashinani o‘rganish.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="Blog-Banner-Computer-Vision.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/Blog-Banner-Computer-Vision.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Compyuter Vision</h5>
                       <p>Computer Vision — bu rasm va videolar orqali kompyuterga “ko‘rishni” o‘rgatadigan sun’iy intellekt yo‘nalishi.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="frontend-kurs.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/frontend-kurs.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Frontend</h5>
                       <p>Veb dasturlash asoslari</p>
